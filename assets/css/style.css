@@ -82,6 +82,9 @@ button{
   color: #fff;
   font-family: petrona;
 }
+.bold{
+  font-weight: bold;
+}
 .alt-text__color{
   color: #2D9CDB;
   font-weight: 500;
@@ -309,7 +312,91 @@ button{
 .padding-wrapper{
   padding: 0 60px;
 }
+
+
+/*=====PROJECT SECTION STYLING=====*/
 .projects-section{
   margin: 60px 0 24px 0;
   color: #fff;
 }
+.project-container{
+  display: flex;
+  width: 100%;
+  margin-top: 48px;
+}
+.project-container__image{
+  width: 40%;
+}
+.project-container__image img{
+  width: 80%;
+  height: auto;
+}
+.project-container__description{
+  width: 60%;
+}
+.project-container__description h2, p{
+  margin-bottom: 12px;
+}
+.project-container__description .tags-wrapper{
+  margin: 20px 0;
+}
+.project-container__description .tags-wrapper li{
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 12px 8px 0;
+  background-color: #d3d3d3;
+  padding: 8px 12px;
+  border-radius: 18px;
+  color: #000;
+  font-size: 14px;
+}
+@media (max-width: 1000px){
+  .project-container__image{
+    margin-right: 24px;
+  }
+  .project-container__image img{
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media (max-width: 760px){
+  .project-container{
+    flex-direction: column;
+  }
+  .project-container__image{
+    width: 100%;
+  }
+  .project-container__image img{
+    width: 100%;
+    height: auto;
+  }
+  .project-container__description{
+    width: 100%;
+    margin-top: 24px;
+  }
+
+}
+/*=====END OF PROJECT SECTION STYLING=====*/
+
+
+/*=====SERVICES SECTION STYLING=====*/
+.service-section{
+  margin: 60px 0 24px 0;
+  color: #fff;
+}
+.service-lists__container{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+.service-lists__container .service-lists__item{
+  margin-top: 24px;
+}
+.service-lists__item .service-list__description h4{
+  color: #2D9CDB;
+  margin: 12px 0 8px 0;
+}
+/*=====END OF SERVICES SECTION STYLING=====*/
