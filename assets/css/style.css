@@ -111,12 +111,14 @@ button{
   padding: 16px;
   font-family: petrona;
   color: white;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .navbar-logo{
   width: 70px;
   height: auto;
   margin: 5px 7px;
+  margin-left: 40px;
+
 }
 .navbar__Items {
   display: flex;
@@ -182,6 +184,11 @@ button{
     font-size: 30px;
   } 
 }
+@media (min-width: 770px){
+  .navbar__Items {
+    margin-right: 60px;
+  }
+}
 /*=====END OF NAVIGATION BAR STYLING=====*/
 
 
@@ -230,6 +237,19 @@ button{
   background-color: #02111D;
   height: 100%;
 }
+.padding-wrapper{
+  padding: 0 85px;
+}
+@media (max-width: 1004px){
+  .padding-wrapper{
+    padding: 0 50px;
+  }
+}
+@media (max-width: 360px){
+  .padding-wrapper{
+    padding: 0 30px;
+  }
+}
 /*=====HOME PAGE HERO SECTION STYLING=====*/
 .hero-section{
   color: #fff;
@@ -237,6 +257,7 @@ button{
   display: flex;
   justify-content: space-around;
   margin-left: 60px;
+  max-width: 1400px;
 }
 .hero-section .hero-section__description{
   text-align: left;
@@ -262,7 +283,7 @@ button{
 .hero-section .hero-section__description .hero-btn{
     margin-left: 24px;
 }
-@media (max-width: 1020px){
+@media (max-width: 1024px){
   .hero-section .hero-section__description .hero-btn{
     margin: 12px 0px 0px 0px;
 }
@@ -312,16 +333,15 @@ button{
     margin: 0 12px 0 12px;
   }
 }
+
 /*=====END OF HOMEPAGE HERO SECTION STYLING=====*/
-.padding-wrapper{
-  padding: 0 60px;
-}
 
 
 /*=====PROJECT SECTION STYLING=====*/
 .projects-section{
   margin: 60px 0 24px 0;
   color: #fff;
+  max-width: 1400px;
 }
 .project-container{
   display: flex;
@@ -329,14 +349,14 @@ button{
   margin-top: 48px;
 }
 .project-container__image{
-  width: 40%;
+  width: 50%;
 }
 .project-container__image img{
   width: 80%;
   height: auto;
 }
 .project-container__description{
-  width: 60%;
+  width: 50%;
 }
 .project-container__description h2, p{
   margin-bottom: 12px;
@@ -364,6 +384,12 @@ button{
   }
 
 }
+@media (max-width: 850px){
+  .project-container__description .tags-wrapper li{
+    margin: 0 12px 8px 0;
+    font-size: 12px;
+  }
+}
 @media (max-width: 760px){
   .project-container{
     flex-direction: column;
@@ -388,11 +414,12 @@ button{
 .service-section{
   margin: 60px 0 24px 0;
   color: #fff;
+  max-width: 1300px;
 }
 .service-lists__container{
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 10px;
   padding: 10px;
 }
@@ -402,5 +429,29 @@ button{
 .service-lists__item .service-list__description h4{
   color: #2D9CDB;
   margin: 12px 0 8px 0;
+}
+.service-lists__container .margin-left{
+  margin-left: 12px;
+}
+
+@media (max-width: 1168px){
+  .service-lists__container{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+@media (max-width: 1068px){
+  .service-lists__container{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 689px){
+  .service-lists__container .margin-left{
+    margin-left: 0;
+  }
+}
+@media (max-width: 556px){
+  .service-lists__container{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
 /*=====END OF SERVICES SECTION STYLING=====*/
