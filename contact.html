@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creative_yuth</title>
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--Google font CDN-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+	<!--Fontaweone CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--meta data-->
+	<meta charset="utf-8" />
+    <meta name="description" content="">
+    <!--Favicon-->
+    <link rel="icon" href="assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="body-wrapper">
+  <header class="banner-wrapper">
+    
+  <div class="navbar">
+   <div class="navbar__Link navbar__Link-brand">
+      <a href="index.html" class="index-link">
+        <img src="assets/icons/logo-emoji.svg" class="navbar-logo" alt="website's logo">
+      </a>
+   </div>
+
+    <div class="navbar__Link navbar__Link-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <nav class="navbar__Items">
+      <ul>
+        <li class="navbar__Link">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="navbar__Link margin-left">
+          <a class="nav-link" href="contact.html">
+            Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class="padding-wrapper">
+    <section class="contact-page">
+      <h1>Contact Me</h1>
+      <main>
+        <div class="contact-page__texts">
+          <div class="social-links">
+            <img src="assets/icons/linkedin.svg">
+            <img src="assets/icons/twitter.svg">
+            <img src="assets/icons/whatsapp.svg">
+            <img src="assets/icons/github.svg">
+            <img src="assets/icons/behance.svg">
+          </div>
+          <p>Do feel free to contact me if you would like to learn more about my projects or work with me in the future. I look forward to hearing from you!</p>
+      </div>
+
+      <div class="contact-fields">
+        <form action="submit.php" method="post">
+          <div>
+          <label>Full Name</label>
+          <br>
+          <input type="text" name="name" class="text-input" placeholder="Let's start with a name">
+          </div>
+            
+          <div>
+          <label>Email Address</label>
+          <br>
+          <input type="mail" name="email" class="text-input" placeholder="No worries, I won't spam you lol!">
+          </div>
+
+          <div>
+          <label>Message</label>
+          <br>
+          <textarea type="text" name="message" class="text-input textarea" placeholder="Input your message"></textarea>
+          </div>
+          <button class="primary-btn submit-btn" type="submit">Submit</button>
+      </form>
+      </div>
+    </main>
+    </section>
+    <br><br><br><br><br><br>
+  </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!--Custom script-->
+ <script src="assets/js/script.js" ></script>
+ </body>
+</html>
