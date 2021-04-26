@@ -244,6 +244,11 @@ button{
 .padding-wrapper{
   padding: 0 85px;
 }
+@media (min-width: 1300px){
+  .padding-wrapper{
+    margin: 0 10% 0 10%;
+  }
+}
 @media (max-width: 1004px){
   .padding-wrapper{
     padding: 0 50px;
@@ -257,12 +262,18 @@ button{
 /*=====HOME PAGE HERO SECTION STYLING=====*/
 .hero-section{
   color: #fff;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin-left: 60px;
-  max-width: 1400px;
+   
 }
+@media (min-width: 1300px){
+  .hero-section{
+    margin: 0 12% 0 13%;
+  }
+}
+
 .hero-section .hero-section__description{
   text-align: left;
   width: 50%;
@@ -273,6 +284,11 @@ button{
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+@media (min-width: 1300px){
+  .hero-section .hero-section__image{
+    margin-right: 13%;
+  }
 }
 .hero-section .hero-section__description h1{
     margin-bottom: 24px;
@@ -346,7 +362,11 @@ button{
 .projects-section{
   margin: 60px 0 24px 0;
   color: #fff;
-  max-width: 1400px;
+   
+}
+@media (min-width: 1300px){
+  .projects-section{
+    margin-top: 90px;
 }
 .project-container{
   display: flex;
@@ -362,6 +382,7 @@ button{
 }
 .project-container__description{
   width: 50%;
+  max-width: 600px;
 }
 .project-container__description h2, p{
   margin-bottom: 12px;
@@ -419,7 +440,6 @@ button{
 .service-section{
   margin: 60px 0 24px 0;
   color: #fff;
-  max-width: 1300px;
 }
 .service-lists__container{
   margin: 0 auto;
@@ -475,6 +495,7 @@ button{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 1440px;
 }
 .process-section .process-container{
   background-color: #fff;
@@ -506,7 +527,6 @@ button{
 .contact-section .contact-img img{
   width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 8px;
 }
 .contact-section .contact-details{
@@ -517,6 +537,15 @@ button{
   z-index: 1;
   transform: translateX(-2em);
   border-radius: 8px;
+}
+@media (min-width: 1300px){
+ .contact-section .contact-img img{
+  width: 110%;
+ }
+  .contact-section .contact-details{
+    width: 70%;
+
+  }
 }
 .contact-section .contact-details h2, p{
   margin-bottom: 24px;
@@ -586,7 +615,7 @@ button{
 /*=====ABOUT PAGE STYLING=====*/
 .about-description{
   color: #fff;
-  max-width: 1400px;
+   
 }
 .about-description h1{
   margin: 48px 0 36px 0;
