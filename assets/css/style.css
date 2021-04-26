@@ -372,6 +372,7 @@ button{
 @media (min-width: 1300px){
   .projects-section{
     margin-top: 90px;
+  }
 }
 .project-container{
   display: flex;
