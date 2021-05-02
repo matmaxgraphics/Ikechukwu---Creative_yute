@@ -7,3 +7,9 @@ function classToggle() {
 
 document.querySelector('.navbar__Link-toggle')
   .addEventListener('click', classToggle);
+
+
+  //loading animation
+  $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
